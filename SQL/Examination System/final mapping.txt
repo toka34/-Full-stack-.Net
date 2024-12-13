@@ -1,0 +1,45 @@
+--manager_schema--1--Branch(branch_id,branch_name,  --fg1  
+--manager_schema--2--Account(Account_id,username,password  --fg2                	
+--manager_schema--3--Manager(ManagerID,ManagerName,AccountID,BranchID  --fg3        
+--manager_schema--4--Intake(IntakeID,BranchID,                          --fg4       
+--manager_schema--5--Track(TrackID,TrackName,IntakeID			--fg5-    
+--Instructor_schema--6--Instructor(InstructorID,InstructorName,AccountID,    --fg1-    
+--Student_schema--7--Class(ClassID,ClassName,Year, InstructorId          --fg6 -    
+--Student_schema--8--Student(StudentID,StudentName,ManagerID,AccountID,TrackID,ClassID   --fg7  
+--Instructor_schema--9--Course(CourseID,CourseName,MaxDegree,MinDegree,Description  --fg1-  
+
+--Instructor_schema--10--Exam(ExamID,Type,AllowanceOption,StartTime,EndTime,InstructorID,IntakeID,BranchID,TrackID,ClassID --fg8 
+--Instructor_schema--11--ExamQuestion(ExamID,QuestionID,Degree      --fg4-
+--Instructor_schema--12--Course_exam(CourseID,ExamID                       --fg6-
+--Instructor_schema--13--QuestionPool(QuestionID,QuestionText,Type,CorrectAnswer,  --fg5-
+--Instructor_schema--14--Question_answer(QuestionID,OptionID,AnswerText     fg3-
+--Student_schema--15--StudentExam(StudentID,ExamID,QuestionID,StudentAnswer,IsCorrect,DegreeEarned--fg1
+--Student_schema--16--ClassCourse(CourseID,ClassID,   --fg2-
+--Instructor_schema--17--CourseExam(CourseID,ExamID       --fg2
+--manager_schema--18--TrackCourse(TrackID,CourseID,    --fg2
+--manager_schema--19--AuditLog(AuditID,LogMessage,LogDate)
+--Instructor_schema--20--ExamAuditLog(AuditID,ActionType,LogMessage,LogDate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
